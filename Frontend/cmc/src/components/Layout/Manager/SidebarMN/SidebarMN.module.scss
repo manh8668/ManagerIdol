@@ -1,0 +1,44 @@
+.sidebar {
+}
+
+.inner {
+    .sidebar-title {
+        margin-top: 10px;
+        height: 52px;
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        text-align: center;
+        line-height: 52px;
+        background-color: #dedede;
+        a {
+            padding: 12px 52px;
+        }
+    }
+}
+
+.list-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    .list-sidebar-item {
+        width: 100%;
+        height: 34px;
+
+        border-bottom: 3px solid #fff;
+
+        .list-sidebar-item-link {
+            padding-left: 15px;
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            height: 34px; /* Hoặc giá trị chiều cao mong muốn */
+
+            p {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                margin-left: 10px;
+            }
+        }
+    }
+}

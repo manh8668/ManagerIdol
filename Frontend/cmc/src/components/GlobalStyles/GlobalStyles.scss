@@ -1,0 +1,66 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --primary: #fe2c55;
+    --black: #000000;
+    --text-color: #333;
+    //default layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.grid {
+    width: 1150px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 12px;
+}
+
+.grid__column-2 {
+    padding: 0 12px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding: 0, 12px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding: 0 12px;
+    width: 100%;
+}

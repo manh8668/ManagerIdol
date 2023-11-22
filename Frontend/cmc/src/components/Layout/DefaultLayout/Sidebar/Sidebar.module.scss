@@ -1,0 +1,31 @@
+.sidebar {
+}
+.list-sidebar {
+    padding: 20px 0 26px 8px;
+}
+.list-sidebar-item {
+    display: flex;
+    justify-content: flex-start;
+    height: 48px;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.list-sidebar-item img {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.list-sidebar-item-link {
+    margin-left: 8px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.list-sidebar-item-link-1 {
+    color: var(--primary);
+    font-size: 1.8rem;
+}

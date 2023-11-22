@@ -1,0 +1,50 @@
+.wrapper {
+    border-radius: 10px;
+    background-color: white;
+
+    .image {
+        float: left;
+        width: 380px;
+        height: 380px;
+
+        display: flex; /* Sử dụng display: flex để căn giữa theo chiều cao và chiều rộng */
+        align-items: center; /* Căn giữa theo chiều cao */
+        justify-content: center; /* Căn giữa theo chiều rộng */
+
+        img {
+            padding: 15px;
+            max-height: 380px;
+            max-width: 380px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .info {
+        margin-top: 20px;
+        .line-name {
+            padding-top: 10px;
+        }
+        .name {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 2.8rem;
+            span:not(.name) {
+                font-size: 2rem;
+                font-weight: 500;
+                color: var(--primary);
+            }
+        }
+        .date {
+            display: flex;
+
+            h4 {
+                margin-left: 5px;
+                line-height: 23px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

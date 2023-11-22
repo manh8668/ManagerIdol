@@ -1,0 +1,48 @@
+.title {
+    margin-top: 10px;
+    width: 100%;
+
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    line-height: 52px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+
+    .card {
+        display: flex;
+
+        .card__new {
+            width: 176px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin: 5px 5px 12px 0;
+            box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid var(--primary);
+                z-index: 1;
+                cursor: pointer;
+            }
+            img {
+                width: 174px;
+                height: 268px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .info {
+                text-align: center;
+                height: 56px;
+
+                h3 {
+                    line-height: 56px;
+                    font-size: 2.2rem;
+                    color: var(--black);
+                }
+            }
+        }
+    }
+}

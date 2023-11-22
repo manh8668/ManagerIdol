@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin: 20px 0;
+    }
+
+    .btn-add {
+        margin-bottom: 5px;
+    }
+}
+
+.search {
+    border: #484952;
+    padding-left: 10px;
+    width: 280px;
+    height: 28px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    caret-color: rgb(254, 44, 85);
+
+    .btn-search {
+        border: 1px solid rgb(45, 107, 229);
+        transition: box-shadow 0.3s;
+    }
+    input:not(:placeholder-shown) ~ .btn-search {
+        border: 1px solid rgb(28, 100, 244);
+        background-color: rgb(79, 129, 230);
+        box-shadow: 0.5px 0.5px 0.5px 0px rgb(56, 102, 255);
+    }
+    &:focus {
+        color: #768192;
+        background-color: #fff;
+
+        box-shadow: 0 0 0 0.2rem rgb(250, 107, 136);
+    }
+}
+
+.data {
+    table {
+        width: 100%;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+
+        .des {
+            white-space: nowrap; /* Ngăn cột xuống dòng */
+            overflow: hidden; /* Ẩn nội dung vượt quá kích thước cột */
+            text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) cho nội dung bị ẩn */
+            max-width: 180px; /* Kích thước cố định của cột (điều này có thể điều chỉnh) */
+        }
+    }
+    th,
+    td {
+        width: 200px;
+        padding: 8px;
+        text-align: left;
+        border-top: 1px solid #dee2e6;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+}
+.btn {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 80px;
+    font-weight: 600;
+}
+.btn-primary {
+    background-color: rgb(45, 107, 229);
+}
+
+.btn-danger {
+    background-color: rgb(225, 31, 31);
+}
+
+.btn-success {
+    background-color: rgb(54, 194, 54);
+}
